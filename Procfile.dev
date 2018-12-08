@@ -1,0 +1,2 @@
+fpm: ./script/start_local_php-fpm.sh
+web: ./script/start_local_nginx.sh

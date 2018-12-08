@@ -1,0 +1,20 @@
+# Wordpress
+*.log
+# Sensitive info moved to environment variables
+# wp-config.php
+wp-content/
+
+/.htaccess
+/license.txt
+/readme.html
+/sitemap.xml
+/sitemap.xml.gz
+
+# Composer
+composer.phar
+/vendor/
+
+# development
+.env
+config/nginx/wordpress
+config/php-fpm/php-fpm.conf
