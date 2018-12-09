@@ -1,0 +1,35 @@
+{
+  "name": "starsirius/serrinalin-wp",
+  "description": "Serrina Lin's blog",
+  "versin": "0.0.1",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Chung-Yi Chi",
+      "email": "cychi1210@gmail.com"
+    }
+  ],
+  "config": {
+    "platform": {
+      "php": "7.2"
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
+  "require": {
+    "php": "~7.2",
+    "wp-cli/wp-cli-bundle": "*",
+    "wpackagist-plugin/wordpress-seo": "*"
+  },
+  "scripts": {
+    "post-install-cmd": "wp plugin activate wordpress-seo", 
+    "test": "phpunit -v tests"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*"
+  }
+}
