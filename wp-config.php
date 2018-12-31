@@ -1,12 +1,15 @@
 <?php
-// The following SSL setting for reversed proxy has to be the top of this file;
-// otherwise, we will get "Sorry, you are not allowed to access this page."
-define('FORCE_SSL_ADMIN', true);
-// in some setups HTTP_X_FORWARDED_PROTO might contain 
-// a comma-separated list e.g. http,https
-// so check for https existence
-if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false)
-  $_SERVER['HTTPS']='on';
+$force_ssl = strtolower(getenv('FORCE_SSL_ADMIN')) == "false" ? false : true;
+if ($force_ssl) {
+  // The following SSL setting for reversed proxy has to be the top of this file;
+  // otherwise, we will get "Sorry, you are not allowed to access this page."
+  define('FORCE_SSL_ADMIN', true);
+  // in some setups HTTP_X_FORWARDED_PROTO might contain
+  // a comma-separated list e.g. http,https
+  // so check for https existence
+  if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false)
+    $_SERVER['HTTPS']='on';
+}
 
 /**
  * The base configuration for WordPress
