@@ -18,6 +18,7 @@
  * @package WordPress
  */
 
+
 $db_env_var = getenv('DATABASE_PROVIDER_VAR') ?: 'DATABASE_URL';
 $db = parse_url(getenv($db_env_var));
 
