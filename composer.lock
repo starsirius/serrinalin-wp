@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5e397dfb69f6902cbf4dd4a990fdef33",
+    "content-hash": "fa71b9ab537a8d9d5e845ea5b42e75e3",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -3278,6 +3278,26 @@
             "time": "2018-11-09T21:25:11+00:00"
         },
         {
+            "name": "wpackagist-plugin/amazon-s3-and-cloudfront",
+            "version": "2.0.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/amazon-s3-and-cloudfront/",
+                "reference": "tags/2.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/amazon-s3-and-cloudfront.2.0.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/amazon-s3-and-cloudfront/"
+        },
+        {
             "name": "wpackagist-plugin/wordpress-seo",
             "version": "9.2.1",
             "source": {
@@ -3288,7 +3308,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/wordpress-seo.9.2.1.zip",
-                "reference": null,
+                "reference": "tags/9.2.1",
                 "shasum": null
             },
             "require": {

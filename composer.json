@@ -23,10 +23,11 @@
   "require": {
     "php": "~7.2",
     "wp-cli/wp-cli-bundle": "*",
+    "wpackagist-plugin/amazon-s3-and-cloudfront": "~2.0.1",
     "wpackagist-plugin/wordpress-seo": "*"
   },
   "scripts": {
-    "post-install-cmd": "wp plugin activate wordpress-seo", 
+    "post-install-cmd": "wp plugin activate amazon-s3-and-cloudfront wordpress-seo",
     "test": "phpunit -v tests"
   },
   "require-dev": {
